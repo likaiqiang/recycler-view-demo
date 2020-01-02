@@ -6,8 +6,23 @@
   <title>recycler-view.js</title>
 </head>
 <body>
-  <header>
-    <h1 class="title">recycler-view</h1>
-  </header>
+
+<header class="flex-box flex-between-center">
+  <h1 class="title">RecyclerView</h1>
+</header>
+
+<div id="content">
+  {{#> views/section id="normal" right=true}}
+    <article>
+      <h2>Normal Style</h2>
+      <p>Normal style of recycler-view.Each item's height is 150px.</p>
+      <p>'CSS Counter: x' means this item is the xth item in the scroller container.So the max value of x means there are x items in the scroller container totally.</p>
+      <p>For example, if the max value of x is 14.That means there are 14 items in scroller container totally.</p>
+      <br>
+      <script src="https://gist.github.com/hdcoo/88963be7e5175ab24ce9bf2814bfc110.js"></script>
+    </article>
+  {{/ views/section}}
+</div>
+
 </body>
 </html>

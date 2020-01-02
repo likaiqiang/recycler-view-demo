@@ -1,0 +1,30 @@
+@import "color";
+
+.recycler-container {
+  counter-reset: recycler;
+}
+
+.recycler-item {
+  box-sizing: border-box;
+  border-bottom: 2px solid $c-border;
+  counter-increment: recycler;
+
+  &::before {
+    content: 'CSS Counter: 'counter(recycler);
+    position: absolute;
+    padding: 5px 10px;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    text-align: center;
+    background: rgba(121, 255, 69, .4);
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.num-recycler-item {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+

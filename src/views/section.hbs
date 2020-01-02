@@ -1,0 +1,17 @@
+<section class="case flex-box flex-center-center">
+  {{#unless right}}
+    <div class="description flex-box flex-start-center">
+      {{> @partial-block}}
+    </div>
+  {{/unless}}
+  <div class="recycler flex-box flex-end-center">
+    <div id="{{id}}" class="recycler-scroller">
+      <div id="{{id}}-container" class="recycler-container"></div>
+    </div>
+  </div>
+  {{#if right}}
+    <div class="description flex-box flex-start-center">
+      {{> @partial-block}}
+    </div>
+  {{/if}}
+</section>

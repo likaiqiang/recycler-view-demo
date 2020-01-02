@@ -1,8 +1,24 @@
+@mixin justify($align) {
+  align-items: center;
+  justify-content: $align;
+}
+
 .flex-box {
   display: flex;
 }
 
-.flex-center {
-  align-items: center;
-  justify-content: center;
+.flex-center-center {
+  @include justify(center)
+}
+
+.flex-between-center {
+  @include justify(space-between);
+}
+
+.flex-end-center {
+  @include justify(flex-end);
+}
+
+.flex-start-center {
+  @include justify(flex-start);
 }
