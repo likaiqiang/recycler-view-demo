@@ -2,6 +2,12 @@ import { Recycler } from 'recycler-view';
 import { NumberRenderer, NumberSource } from './common';
 
 class NormalSource extends NumberSource {
+  constructor(props) {
+    super(props);
+
+    this.fetch();
+  }
+
   getWidth(index, recycler) {
     return '100%';
   }

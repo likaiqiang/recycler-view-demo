@@ -22,8 +22,6 @@ export class NumberSource extends Source {
     super();
     this.countPerPage = countPerPage || 30;
     this.data = [];
-
-    this.fetch();
   }
 
   fetch() {

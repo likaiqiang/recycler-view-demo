@@ -7,6 +7,8 @@ class MultiColumnsSource extends NumberSource {
 
     this.columns = 3;
     this.width = `${(1 / this.columns) * 100}%`;
+
+    this.fetch();
   }
 
   getWidth(index, recycler) {

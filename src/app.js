@@ -3,6 +3,7 @@ import './styles/main.scss';
 import getNormalRecycler from './recyclers/normal';
 import getMultiColumnsRecycler from './recyclers/multicolumns';
 import getWaterfallRecycler from './recyclers/waterfall';
+import getHrWaterfallRecycler from './recyclers/hrwaterfall';
 
 getNormalRecycler(
   document.getElementById('normal'),
@@ -14,7 +15,12 @@ getMultiColumnsRecycler(
   document.getElementById('multicolumns-container')
 );
 
-window.waterfall = getWaterfallRecycler(
+getWaterfallRecycler(
   document.getElementById('waterfall'),
   document.getElementById('waterfall-container')
+);
+
+getHrWaterfallRecycler(
+  document.getElementById('hrwaterfall'),
+  document.getElementById('hrwaterfall-container')
 );
