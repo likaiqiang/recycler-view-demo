@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>recycler-view.js</title>
+<link href="/recycler-view-demo/main.css" rel="stylesheet"></head>
+<body>
+
+<header class="flex-box flex-between-center">
+  <h1 class="title">RecyclerView</h1>
+</header>
+
+<div id="content">
+<section class="case flex-box flex-center-center">
+  <div class="recycler flex-box flex-end-center">
+    <div id="normal" class="recycler-scroller">
+      <div id="normal-container" class="recycler-container"></div>
+    </div>
+  </div>
+    <div class="description flex-box flex-start-center">
+          <article>
+            <h2>Normal Style</h2>
+            <p>Normal style of recycler-view.Each item's height is 150px.</p>
+            <p>'CSS Counter: x' means this item is the xth item in the scroller container.So the max value of x means there are x items in the scroller container totally.</p>
+            <p>For example, if the max value of x is 14.That means there are 14 items in scroller container totally.</p>
+            <p><b>Specially,the red one represent the last item in the scroller container.</b></p>
+            <br>
+          </article>
+    </div>
+</section>
+<section class="case flex-box flex-center-center">
+    <div class="description flex-box flex-start-center">
+          <article>
+            <h2>Multi Columns Style</h2>
+            <p>Multi columns style of recycler-view.Each item's height is 150px and width is '33.3%'.</p>
+            <br>
+          </article>
+    </div>
+  <div class="recycler flex-box flex-end-center">
+    <div id="multicolumns" class="recycler-scroller">
+      <div id="multicolumns-container" class="recycler-container"></div>
+    </div>
+  </div>
+</section>
+<section class="case flex-box flex-center-center">
+  <div class="recycler flex-box flex-end-center">
+    <div id="waterfall" class="recycler-scroller">
+      <div id="waterfall-container" class="recycler-container"></div>
+    </div>
+  </div>
+    <div class="description flex-box flex-start-center">
+          <article>
+            <h2>Waterfall</h2>
+            <p>Waterfall implementation.Each item's width is '50%' and height is among 100px ~ 400px.</p>
+            <br>
+          </article>
+    </div>
+</section>
+<section class="case flex-box flex-center-center">
+    <div class="description flex-box flex-start-center">
+          <article>
+            <h2>Horizontal Waterfall</h2>
+            <p>Horizontal Waterfall implementation.Each item's height is 150px and width is random among 0% ~ 100%.</p>
+            <br>
+          </article>
+    </div>
+  <div class="recycler flex-box flex-end-center">
+    <div id="hrwaterfall" class="recycler-scroller">
+      <div id="hrwaterfall-container" class="recycler-container"></div>
+    </div>
+  </div>
+</section></div>
+
+<script type="text/javascript" src="/recycler-view-demo/index.js"></script></body>
+</html>
