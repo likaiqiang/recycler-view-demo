@@ -16,6 +16,10 @@ $pageHeight: calc(100% - #{$s-header});
   overflow: hidden;
   margin-bottom: 15px;
   background: #fff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .recycler, .description {
