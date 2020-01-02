@@ -3,6 +3,7 @@ const baseConfig = require('./webpack.base.config')();
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const proConfig = {
+  mode: 'production',
   module: {
     rules: [
       {
