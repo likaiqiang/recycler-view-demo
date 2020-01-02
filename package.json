@@ -4,6 +4,7 @@
   "description": "Demo for recycler-view",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "dev": "webpack-dev-server --config build/webpack.dev.config.js"
   },
   "repository": {
