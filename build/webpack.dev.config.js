@@ -6,11 +6,7 @@ const devConfig = {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'postcss-loader',
-          'sass-loader'
-        ]
+        use: ['style-loader', 'postcss-loader', 'sass-loader']
       }
     ]
   },
