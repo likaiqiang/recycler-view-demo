@@ -17,6 +17,14 @@ export class NumberRenderer extends Renderer {
   }
 }
 
+export class NumberMultiColumnsRenderer extends NumberRenderer {
+  createElement(data) {
+    const el = super.createElement(data);
+    el.classList.add('multi-columns-recycler-item');
+    return el;
+  }
+}
+
 export class NumberSource extends Source {
   constructor(countPerPage) {
     super();

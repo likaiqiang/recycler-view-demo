@@ -6,7 +6,7 @@
 
 .recycler-item {
   box-sizing: border-box;
-  border-bottom: 2px solid $c-border;
+  border-bottom: 1px solid $c-border;
   counter-increment: recycler;
 
   &::before {
@@ -20,11 +20,20 @@
     background: rgba(121, 255, 69, .4);
     border-bottom-right-radius: 5px;
   }
+
+  &:last-child::before {
+    content: 'Max: 'counter(recycler);
+    background: rgba(255, 23, 54, .5);
+  }
 }
 
 .num-recycler-item {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 
+.multi-columns-recycler-item[data-column='1'] {
+  border-left: 1px solid $c-border;
+  border-right: 1px solid $c-border;
+}
 

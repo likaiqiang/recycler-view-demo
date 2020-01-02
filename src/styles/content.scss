@@ -1,4 +1,5 @@
 @import "size";
+@import "color";
 
 $pageHeight: calc(100% - #{$s-header});
 
@@ -7,11 +8,14 @@ $pageHeight: calc(100% - #{$s-header});
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  background: $c-bg;
 }
 
 .case {
   height: 100%;
   overflow: hidden;
+  margin-bottom: 15px;
+  background: #fff;
 }
 
 .recycler, .description {

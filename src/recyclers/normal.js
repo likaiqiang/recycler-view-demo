@@ -1,4 +1,4 @@
-import { Recycler } from 'recycler-view/dist';
+import { Recycler } from 'recycler-view';
 import { NumberRenderer, NumberSource } from './common';
 
 class NormalSource extends NumberSource {
