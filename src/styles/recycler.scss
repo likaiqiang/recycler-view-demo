@@ -6,7 +6,6 @@
 
 .recycler-item {
   box-sizing: border-box;
-  border-bottom: 1px solid $c-border;
   counter-increment: recycler;
 
   &::before {
@@ -30,10 +29,5 @@
 .num-recycler-item {
   font-size: 3vw;
   font-weight: bold;
+  outline: 1px solid $c-border;
 }
-
-.multi-columns-recycler-item[data-column='1'] {
-  border-left: 1px solid $c-border;
-  border-right: 1px solid $c-border;
-}
-

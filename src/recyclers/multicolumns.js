@@ -1,9 +1,16 @@
 import { Recycler } from 'recycler-view';
-import { NumberMultiColumnsRenderer, NumberSource } from './common';
+import { NumberRenderer, NumberSource } from './common';
 
 class MultiColumnsSource extends NumberSource {
+  constructor() {
+    super();
+
+    this.columns = 3;
+    this.width = `${(1 / this.columns) * 100}%`;
+  }
+
   getWidth(index, recycler) {
-    return '33.33%';
+    return this.width;
   }
 
   getHeight(index, recycler) {
@@ -15,7 +22,7 @@ class MultiColumnsSource extends NumberSource {
   }
 
   getScrollTop(index, recycler) {
-    return Math.floor(index / 3) * this.getHeight(index);
+    return Math.floor(index / this.columns) * this.getHeight(index);
   }
 
   getLength(recycler) {
@@ -23,11 +30,11 @@ class MultiColumnsSource extends NumberSource {
   }
 
   getMaxScrollHeight(recycler) {
-    return Math.ceil(this.getLength()) * this.getHeight();
+    return Math.ceil(this.getLength() / this.columns) * this.getHeight();
   }
 
   getOffset(index, recycler) {
-    let column = index % 3;
+    let column = index % this.columns;
 
     if (!column) {
       return { x: 0, y: 0 };
@@ -41,13 +48,13 @@ class MultiColumnsSource extends NumberSource {
   }
 
   getColumn(index, recycler) {
-    return index % 3;
+    return index % this.columns;
   }
 }
 
 export default function getMultiColumnsRecycler(scroller, container) {
   return new Recycler(scroller, new MultiColumnsSource(), {
     container,
-    renderer: new NumberMultiColumnsRenderer()
+    renderer: new NumberRenderer()
   });
 }

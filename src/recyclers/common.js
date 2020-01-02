@@ -13,15 +13,7 @@ export class NumberRenderer extends Renderer {
   }
 
   update(el, data, recycler) {
-    el.textContent = data;
-  }
-}
-
-export class NumberMultiColumnsRenderer extends NumberRenderer {
-  createElement(data) {
-    const el = super.createElement(data);
-    el.classList.add('multi-columns-recycler-item');
-    return el;
+    el.textContent = data.num;
   }
 }
 
@@ -36,10 +28,12 @@ export class NumberSource extends Source {
 
   fetch() {
     const { data } = this;
-    const initialNum = data[data.length - 1] || 0;
+    const initialNum = (data[data.length - 1] || {}).num || 0;
 
     for (let i = 0; i < this.countPerPage; i++) {
-      data.push(i + initialNum);
+      data.push({
+        num: i + initialNum
+      });
     }
 
     return true;
