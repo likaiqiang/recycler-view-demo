@@ -44,6 +44,7 @@ module.exports = function() {
       new HtmlWebpackPlugin({
         template: path.resolve('src/app.hbs')
       })
-    ]
+    ],
+    devtool: 'source-map'
   };
 };
