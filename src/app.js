@@ -5,22 +5,22 @@ import getMultiColumnsRecycler from './recyclers/multicolumns';
 import getWaterfallRecycler from './recyclers/waterfall';
 import getHrWaterfallRecycler from './recyclers/hrwaterfall';
 
-getNormalRecycler(
+window.normalRecycler = getNormalRecycler(
   document.getElementById('normal'),
   document.getElementById('normal-container')
 );
 
-getMultiColumnsRecycler(
+window.multiColunmnsRecycler = getMultiColumnsRecycler(
   document.getElementById('multicolumns'),
   document.getElementById('multicolumns-container')
 );
 
-getWaterfallRecycler(
+window.waterfallRecycler = getWaterfallRecycler(
   document.getElementById('waterfall'),
   document.getElementById('waterfall-container')
 );
 
-getHrWaterfallRecycler(
+window.hrWaterfallRecycler = getHrWaterfallRecycler(
   document.getElementById('hrwaterfall'),
   document.getElementById('hrwaterfall-container')
 );

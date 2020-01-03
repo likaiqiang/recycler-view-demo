@@ -9,7 +9,7 @@
   counter-increment: recycler;
 
   &::before {
-    content: 'CSS Counter: 'counter(recycler);
+    content: 'No.: 'counter(recycler);
     position: absolute;
     padding: 5px 10px;
     left: 0;
@@ -21,7 +21,6 @@
   }
 
   &:last-child::before {
-    content: 'Max: 'counter(recycler);
     background: rgba(255, 23, 54, .5);
   }
 }

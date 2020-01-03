@@ -39,7 +39,6 @@ $pageHeight: calc(100% - #{$s-header});
 .recycler-scroller {
   width: 80%;
   height: calc(100% - #{60px});
-  border-radius: 10px;
   min-width: 330px;
   overflow-x: hidden;
   overflow-y: scroll;

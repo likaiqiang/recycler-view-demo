@@ -33,7 +33,7 @@ class HrWaterfallSource extends NumberSource {
   }
 
   getMaxScrollHeight(recycler) {
-    return this.getLength() * this.getHeight();
+    return this.currentScrollHeight;
   }
 
   getOffset(index, recycler) {
@@ -103,20 +103,21 @@ class HrWaterfallSource extends NumberSource {
   }
 
   randomWidth(count) {
-    let total = 1;
+    let total = 1 / count;
+    let base = (1 - total) / count;
     let percentages = [];
 
     for (let i = 0; i < count; i++) {
       let taken;
 
       if (i + 1 === count) {
-        percentages.push(total);
+        percentages.push(base + total);
         break;
       }
 
       taken = Math.random() * total;
       total = total - taken;
-      percentages.push(taken);
+      percentages.push(base + taken);
     }
 
     return percentages;
