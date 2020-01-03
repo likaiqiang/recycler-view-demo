@@ -4423,8 +4423,9 @@ readdirp@^2.2.1:
     readable-stream "^2.0.2"
 
 recycler-view@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/recycler-view/-/recycler-view-0.1.0.tgz#a1950f5d0bbcf0aed5a9c6ba032b35d89d7bf89e"
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/recycler-view/-/recycler-view-0.1.1.tgz#e5ddfb60ac82a75cd57ad5090eaa4b28f6397e4f"
+  integrity sha512-M+KP7KASZ3QcZCeGFGpP8WLWCMLTV+27usONNwGFLhqr7VzDtgUsiQGOxUVZREn3Be+hUcM2a8XTFtNlYniFrg==
 
 redent@^1.0.0:
   version "1.0.0"
