@@ -1,13 +1,17 @@
 import { Recycler } from 'recycler-view';
 import { NumberRenderer, NumberSource } from './common';
 
-class MultiColumnsSource extends NumberSource {
-  constructor() {
+export class MultiColumnsSource extends NumberSource {
+  constructor(columns) {
     super();
 
-    this.columns = 3;
+    this.columns = columns || 3;
     this.width = `${(1 / this.columns) * 100}%`;
 
+    this.init();
+  }
+
+  init() {
     this.fetch();
   }
 
@@ -38,15 +42,10 @@ class MultiColumnsSource extends NumberSource {
   getOffset(index, recycler) {
     let column = index % this.columns;
 
-    if (!column) {
-      return { x: 0, y: 0 };
-    }
-
-    if (column === 1) {
-      return { x: '100%', y: 0 };
-    }
-
-    return { x: '200%', y: 0 };
+    return {
+      y: 0,
+      x: `${column * 100}%`
+    };
   }
 
   getColumn(index, recycler) {

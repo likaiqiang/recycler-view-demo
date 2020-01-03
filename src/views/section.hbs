@@ -7,6 +7,9 @@
   <div class="recycler flex-box flex-end-center">
     <div id="{{id}}" class="recycler-scroller">
       <div id="{{id}}-container" class="recycler-container"></div>
+      {{#if footer}}
+      <div id="{{id}}-footer" class="recycler-footer"></div>
+      {{/if}}
     </div>
   </div>
   {{#if right}}

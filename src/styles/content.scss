@@ -35,16 +35,3 @@ $pageHeight: calc(100% - #{$s-header});
 .description {
   padding: 0 10% 0 5%;
 }
-
-.recycler-scroller {
-  width: 80%;
-  height: calc(100% - #{60px});
-  min-width: 330px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-}
-
-.recycler-container, .recycler-scroller {
-  position: relative;
-}
