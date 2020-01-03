@@ -1,7 +1,7 @@
 import { Recycler, Source } from 'recycler-view';
 import { NumberRenderer } from './common';
 
-class WaterfallSource extends Source {
+export class WaterfallSource extends Source {
   constructor() {
     super();
 

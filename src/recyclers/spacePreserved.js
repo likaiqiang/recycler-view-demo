@@ -1,6 +1,6 @@
 import { Recycler } from 'recycler-view';
 import { NumberRenderer } from './common';
-import { MultiColumnsSource } from './multicolumns';
+import { MultiColumnsSource } from './multiColumns';
 
 class DoubleColumnsSource extends MultiColumnsSource {
   constructor() {
