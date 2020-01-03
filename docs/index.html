@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
@@ -20,11 +20,11 @@
   </div>
     <div class="description flex-box flex-start-center">
           <article>
-            <h2>Normal Style</h2>
-            <p>Normal style of recycler-view.Each item's height is 150px.</p>
-            <p>'CSS Counter: x' means this item is the xth item in the scroller container.So the max value of x means there are x items in the scroller container totally.</p>
-            <p>For example, if the max value of x is 14.That means there are 14 items in scroller container totally.</p>
-            <p><b>Specially,the red one represent the last item in the scroller container.</b></p>
+            <h2>基本样式</h2>
+            <p>recycler-view 的最基本样式，每个元素的高为 100px，宽为 100%</p>
+            <p>No.x 代表了这个元素在容器的子元素中排在第几位，是由 css counter 计算得出。</p>
+            <p>也就是说，x 的最大值代表了容器的子元素个数（红底即为容器的最后一个子元素，也即最大值）</p>
+            <p>举例来说，假如看到 No.10，代表这是容器子元素的第 10 个，如果 No.10 为红底，则说明容器共有 10 个子元素</p>
             <br>
           </article>
     </div>
@@ -32,8 +32,8 @@
 <section class="case flex-box flex-center-center">
     <div class="description flex-box flex-start-center">
           <article>
-            <h2>Multi Columns Style</h2>
-            <p>Multi columns style of recycler-view.Each item's height is 150px and width is '33.3%'.</p>
+            <h2>多列样式</h2>
+            <p>recycler-view 多列样式，每个元素高为 150px，宽为 33.3%。</p>
             <br>
           </article>
     </div>
@@ -51,8 +51,8 @@
   </div>
     <div class="description flex-box flex-start-center">
           <article>
-            <h2>Waterfall</h2>
-            <p>Waterfall implementation.Each item's width is '50%' and height is among 100px ~ 400px.</p>
+            <h2>瀑布流</h2>
+            <p>recycler-view 瀑布流实现，每个元素宽为 50%，高在 100px ~ 400px 之间随机。</p>
             <br>
           </article>
     </div>
@@ -60,8 +60,9 @@
 <section class="case flex-box flex-center-center">
     <div class="description flex-box flex-start-center">
           <article>
-            <h2>Horizontal Waterfall</h2>
-            <p>Horizontal Waterfall implementation.Each item's height is 150px and width is random among 0% ~ 100%.</p>
+            <h2>横向瀑布流</h2>
+            <p>recycler-view 横向瀑布流实现。</p>
+            <p>每个元素高度为 150px。每行随机分配 1 ~ 3 个元素，根据每行元素个数不同，每个元素的宽也相应随机。</p>
             <br>
           </article>
     </div>
