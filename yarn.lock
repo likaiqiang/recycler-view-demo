@@ -556,6 +556,12 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
+"@babel/runtime@^7.7.7":
+  version "7.7.7"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.7.4":
   version "7.7.4"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.7.4.tgz#428a7d9eecffe27deac0a98e23bf8e3675d2a77b"
@@ -4422,10 +4428,9 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-recycler-view@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/recycler-view/-/recycler-view-0.1.1.tgz#e5ddfb60ac82a75cd57ad5090eaa4b28f6397e4f"
-  integrity sha512-M+KP7KASZ3QcZCeGFGpP8WLWCMLTV+27usONNwGFLhqr7VzDtgUsiQGOxUVZREn3Be+hUcM2a8XTFtNlYniFrg==
+recycler-view@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/recycler-view/-/recycler-view-1.0.0.tgz#7114abe66b30cdadb4d4bea58d1a38a74195e644"
 
 redent@^1.0.0:
   version "1.0.0"
@@ -4444,7 +4449,7 @@ regenerate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
 
-regenerator-runtime@^0.13.3:
+regenerator-runtime@^0.13.2, regenerator-runtime@^0.13.3:
   version "0.13.3"
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
 
@@ -5431,7 +5436,6 @@ urix@^0.1.0:
 url-loader@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-3.0.0.tgz#9f1f11b371acf6e51ed15a50db635e02eec18368"
-  integrity sha512-a84JJbIA5xTFTWyjjcPdnsu+41o/SNE8SpXMdUvXs6Q+LuhCD9E2+0VCiuDWqgo3GGXVlFHzArDmBpj9PgWn4A==
   dependencies:
     loader-utils "^1.2.3"
     mime "^2.4.4"

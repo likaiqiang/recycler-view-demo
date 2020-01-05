@@ -19,12 +19,13 @@
   },
   "homepage": "https://github.com/hdcoo/recycler-view-demo#readme",
   "dependencies": {
-    "recycler-view": "^0.1.0"
+    "recycler-view": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
     "core-js": "3",
