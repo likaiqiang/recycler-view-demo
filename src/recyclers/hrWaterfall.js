@@ -74,7 +74,7 @@ export class HrWaterfallSource extends NumberSource {
     }
   }
 
-  fetch() {
+  async fetch() {
     const { countPerPage, data } = this;
     const initialNum = (data[data.length - 1] || {}).num || 0;
     const newData = [];

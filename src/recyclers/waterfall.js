@@ -49,7 +49,7 @@ export class WaterfallSource extends Source {
     return this.positions[index].column;
   }
 
-  fetch() {
+  async fetch() {
     const newData = [];
     const { data } = this;
     const initialNum = (data[data.length - 1] || {}).num || 0;

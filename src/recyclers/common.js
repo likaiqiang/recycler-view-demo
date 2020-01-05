@@ -1,4 +1,4 @@
-import { Renderer, Source } from 'recycler-view/dist';
+import { Renderer, Source } from 'recycler-view';
 
 export class NumberRenderer extends Renderer {
   createElement(data) {
@@ -24,7 +24,7 @@ export class NumberSource extends Source {
     this.data = [];
   }
 
-  fetch() {
+  async fetch() {
     const { data } = this;
     const initialNum = (data[data.length - 1] || {}).num || 0;
 
