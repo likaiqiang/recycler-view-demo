@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/hdcoo/recycler-view-demo#readme",
   "dependencies": {
-    "recycler-view": "^1.0.0"
+    "recycler-view": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

@@ -4428,9 +4428,9 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-recycler-view@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/recycler-view/-/recycler-view-1.0.0.tgz#7114abe66b30cdadb4d4bea58d1a38a74195e644"
+recycler-view@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/recycler-view/-/recycler-view-1.0.1.tgz#7ae9892f38147efca1aa97ab613258c658f6b7a2"
 
 redent@^1.0.0:
   version "1.0.0"
