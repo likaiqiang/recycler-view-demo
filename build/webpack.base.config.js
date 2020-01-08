@@ -13,7 +13,7 @@ module.exports = function() {
       alias: {
         assets: path.resolve('src/assets')
       },
-      extensions: ['.js']
+      extensions: ['.js','.ts']
     },
     module: {
       rules: [
@@ -37,6 +37,10 @@ module.exports = function() {
             },
             'img-loader'
           ]
+        },
+        {
+          test: /\.ts?$/,
+          use: 'ts-loader'
         }
       ]
     },

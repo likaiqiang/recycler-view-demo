@@ -1,4 +1,4 @@
-import { Recycler } from 'recycler-view';
+import { Recycler } from 'recycler-view/src/index.ts';
 import { NumberRenderer, NumberSource } from './common';
 
 export class NormalSource extends NumberSource {
@@ -15,6 +15,7 @@ export class NormalSource extends NumberSource {
   getHeight(index, recycler) {
     return 150;
   }
+  
 
   getData(index, recycler) {
     return this.data[index];
